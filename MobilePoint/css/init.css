@@ -1,0 +1,92 @@
+﻿* {
+            font-family: 'Segoe UI';
+        }
+
+        body {
+            background-color: #E0E0E0;
+        }
+
+        .title-area {
+            float: none !important;
+            font-variant: small-caps;
+        }
+
+        .name {
+            display: inline-block;
+            width: 80%;
+        }
+
+        .row {
+            max-width: none;
+        }
+
+        .slide .row {
+            padding: 20px 50px !important;
+            margin: 0 40px;
+        }
+
+        .slide > .row {
+            /*border:1px dashed #6FB554;*/
+            background-color: white;
+            padding-bottom: 10px;
+        }
+
+        .orbit-container h1,
+        .orbit-container h3 {
+            text-align: center;
+        }
+
+        .orbit-slide-number {
+            width: 70px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        h3 .label {
+            font-size: 0.8em;
+        }
+
+        .orbit-container {
+            position: relative;
+        }
+
+        .orbit-prev, .orbit-next {
+            margin-top: 24px !important;
+        }
+
+        .slide {
+            opacity: 0;
+            /*left: -200%;*/
+            position: absolute;
+            margin-top: 10px;
+        }
+            /*CSS3 optimisations*/
+            .slide.inactive {
+                transition: all 0.5s ease-out;
+                -webkit-transition: all 0.5s ease-out;
+                /*left: -100%;*/
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+
+            .slide.active {
+                position: relative;
+                transition: all 0.5s ease-out;
+                -webkit-transition: all 0.5s ease-out;
+                opacity: 1;
+                /*left: 0;*/
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+            }
+
+            .slide h1 {
+                font-variant: small-caps;
+                color: white;
+                background-color: #6FB554;
+                margin: 0 40px;
+                margin-bottom: 10px;
+            }
+
+        .top-bar {
+            background-color: #4F8AB6;
+        }
